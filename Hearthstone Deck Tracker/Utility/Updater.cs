@@ -133,7 +133,6 @@ namespace Hearthstone_Deck_Tracker.Utility
 			try
 			{
 				splashScreenWindow.StartSkipTimer();
-				await Task.Delay(15000);
 				var updateInfo = await mgr.CheckForUpdate(ignoreDelta);
 				if(!updateInfo.ReleasesToApply.Any())
 					return false;
